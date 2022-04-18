@@ -1,0 +1,137 @@
+{
+    "pruner_type": "srmbrep",
+    "configs": [
+        {
+            "layer_set": [
+                "module.downsample_layers.1.1.weight"
+            ],
+            "obh": 128,
+            "obw": 64,
+            "cbh": 32,
+            "cbw": 64,
+            "ibh": 1,
+            "ibw": 1,
+            "osp": 0.0,
+            "opat": "RAMANUJAN",
+            "isp": 0.75,
+            "ipat": "RAMANUJAN",
+            "is_repetitive": true,
+            "collapse_tensor": true,
+            "cross_prob": 0.5,
+            "is_symmetric": false,
+            "make_kwargs": {
+                "TBT_M": 128,
+                "TBT_K": 64,
+                "TBT_N": 64,
+                "NGR": 4,
+                "GSR": 1,
+                "NGC": 2,
+                "GSC": 2,
+                "CBH": 32,
+                "CBW": 64,
+                "IBH": 1,
+                "IBW": 1,
+                "CORE_BLET_COUNT": 16,
+                "I_PATTERN": 1,
+                "DEFS": "\"-DUSE_SHMEM -DUSE_SHMEM_FOR_INDICES\""
+            },
+            "exec_args": [
+                0,
+                256,
+                512,
+                32768,
+                0.0,
+                1,
+                1
+            ]
+        },
+        {
+            "layer_set": [
+                "module.downsample_layers.2.1.weight"
+            ],
+            "obh": 128,
+            "obw": 32,
+            "cbh": 32,
+            "cbw": 32,
+            "ibh": 1,
+            "ibw": 1,
+            "osp": 0.0,
+            "opat": "RAMANUJAN",
+            "isp": 0.75,
+            "ipat": "RAMANUJAN",
+            "is_repetitive": true,
+            "collapse_tensor": true,
+            "cross_prob": 0.5,
+            "is_symmetric": false,
+            "make_kwargs": {
+                "TBT_M": 128,
+                "TBT_K": 32,
+                "TBT_N": 64,
+                "NGR": 4,
+                "GSR": 1,
+                "NGC": 8,
+                "GSC": 1,
+                "CBH": 32,
+                "CBW": 32,
+                "IBH": 1,
+                "IBW": 1,
+                "CORE_BLET_COUNT": 8,
+                "I_PATTERN": 1,
+                "DEFS": "\"-DUSE_SHMEM -DUSE_SHMEM_FOR_INDICES\""
+            },
+            "exec_args": [
+                0,
+                512,
+                1024,
+                8192,
+                0.0,
+                1,
+                1
+            ]
+        },
+        {
+            "layer_set": [
+                "module.downsample_layers.3.1.weight"
+            ],
+            "obh": 128,
+            "obw": 32,
+            "cbh": 32,
+            "cbw": 32,
+            "ibh": 1,
+            "ibw": 1,
+            "osp": 0.0,
+            "opat": "RAMANUJAN",
+            "isp": 0.75,
+            "ipat": "RAMANUJAN",
+            "is_repetitive": true,
+            "collapse_tensor": true,
+            "cross_prob": 0.5,
+            "is_symmetric": false,
+            "make_kwargs": {
+                "TBT_M": 128,
+                "TBT_K": 32,
+                "TBT_N": 64,
+                "NGR": 4,
+                "GSR": 1,
+                "NGC": 4,
+                "GSC": 2,
+                "CBH": 32,
+                "CBW": 32,
+                "IBH": 1,
+                "IBW": 1,
+                "CORE_BLET_COUNT": 8,
+                "I_PATTERN": 1,
+                "DEFS": "\"-DUSE_SHMEM -DUSE_SHMEM_FOR_INDICES\""
+            },
+            "exec_args": [
+                0,
+                1024,
+                2048,
+                2048,
+                0.0,
+                1,
+                1
+            ]
+        }
+    ]
+}

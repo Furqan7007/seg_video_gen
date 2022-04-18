@@ -1,0 +1,371 @@
+{'decay_rate': 0.9, 'decay_type': 'stage_wise', 'num_layers': 6}
+Build LearningRateDecayOptimizerConstructor stage_wise 0.900000 - 8
+{'decay_rate': 0.9, 'decay_type': 'stage_wise', 'num_layers': 6}
+Build LearningRateDecayOptimizerConstructor stage_wise 0.900000 - 8
+Param groups = {
+  "layer_0_decay": {
+    "param_names": [
+      "backbone.downsample_layers.0.0.weight",
+      "backbone.downsample_layers.1.1.weight",
+      "backbone.downsample_layers.2.1.weight",
+      "backbone.downsample_layers.3.1.weight"
+    ],
+    "lr_scale": 0.4782969000000001,
+    "lr": 4.782969000000001e-05,
+    "weight_decay": 0.05
+  },
+  "layer_0_no_decay": {
+    "param_names": [
+      "backbone.downsample_layers.0.0.bias",
+      "backbone.downsample_layers.0.1.weight",
+      "backbone.downsample_layers.0.1.bias",
+      "backbone.downsample_layers.1.0.weight",
+      "backbone.downsample_layers.1.0.bias",
+      "backbone.downsample_layers.1.1.bias",
+      "backbone.downsample_layers.2.0.weight",
+      "backbone.downsample_layers.2.0.bias",
+      "backbone.downsample_layers.2.1.bias",
+      "backbone.downsample_layers.3.0.weight",
+      "backbone.downsample_layers.3.0.bias",
+      "backbone.downsample_layers.3.1.bias"
+    ],
+    "lr_scale": 0.4782969000000001,
+    "lr": 4.782969000000001e-05,
+    "weight_decay": 0.0
+  },
+  "layer_1_no_decay": {
+    "param_names": [
+      "backbone.stages.0.0.gamma",
+      "backbone.stages.0.0.dwconv.bias",
+      "backbone.stages.0.0.norm.weight",
+      "backbone.stages.0.0.norm.bias",
+      "backbone.stages.0.0.pwconv1.bias",
+      "backbone.stages.0.0.pwconv2.bias",
+      "backbone.stages.0.1.gamma",
+      "backbone.stages.0.1.dwconv.bias",
+      "backbone.stages.0.1.norm.weight",
+      "backbone.stages.0.1.norm.bias",
+      "backbone.stages.0.1.pwconv1.bias",
+      "backbone.stages.0.1.pwconv2.bias",
+      "backbone.stages.0.2.gamma",
+      "backbone.stages.0.2.dwconv.bias",
+      "backbone.stages.0.2.norm.weight",
+      "backbone.stages.0.2.norm.bias",
+      "backbone.stages.0.2.pwconv1.bias",
+      "backbone.stages.0.2.pwconv2.bias"
+    ],
+    "lr_scale": 0.531441,
+    "lr": 5.3144100000000005e-05,
+    "weight_decay": 0.0
+  },
+  "layer_1_decay": {
+    "param_names": [
+      "backbone.stages.0.0.dwconv.weight",
+      "backbone.stages.0.0.pwconv1.weight",
+      "backbone.stages.0.0.pwconv2.weight",
+      "backbone.stages.0.1.dwconv.weight",
+      "backbone.stages.0.1.pwconv1.weight",
+      "backbone.stages.0.1.pwconv2.weight",
+      "backbone.stages.0.2.dwconv.weight",
+      "backbone.stages.0.2.pwconv1.weight",
+      "backbone.stages.0.2.pwconv2.weight"
+    ],
+    "lr_scale": 0.531441,
+    "lr": 5.3144100000000005e-05,
+    "weight_decay": 0.05
+  },
+  "layer_2_no_decay": {
+    "param_names": [
+      "backbone.stages.1.0.gamma",
+      "backbone.stages.1.0.dwconv.bias",
+      "backbone.stages.1.0.norm.weight",
+      "backbone.stages.1.0.norm.bias",
+      "backbone.stages.1.0.pwconv1.bias",
+      "backbone.stages.1.0.pwconv2.bias",
+      "backbone.stages.1.1.gamma",
+      "backbone.stages.1.1.dwconv.bias",
+      "backbone.stages.1.1.norm.weight",
+      "backbone.stages.1.1.norm.bias",
+      "backbone.stages.1.1.pwconv1.bias",
+      "backbone.stages.1.1.pwconv2.bias",
+      "backbone.stages.1.2.gamma",
+      "backbone.stages.1.2.dwconv.bias",
+      "backbone.stages.1.2.norm.weight",
+      "backbone.stages.1.2.norm.bias",
+      "backbone.stages.1.2.pwconv1.bias",
+      "backbone.stages.1.2.pwconv2.bias"
+    ],
+    "lr_scale": 0.5904900000000001,
+    "lr": 5.904900000000001e-05,
+    "weight_decay": 0.0
+  },
+  "layer_2_decay": {
+    "param_names": [
+      "backbone.stages.1.0.dwconv.weight",
+      "backbone.stages.1.0.pwconv1.weight",
+      "backbone.stages.1.0.pwconv2.weight",
+      "backbone.stages.1.1.dwconv.weight",
+      "backbone.stages.1.1.pwconv1.weight",
+      "backbone.stages.1.1.pwconv2.weight",
+      "backbone.stages.1.2.dwconv.weight",
+      "backbone.stages.1.2.pwconv1.weight",
+      "backbone.stages.1.2.pwconv2.weight"
+    ],
+    "lr_scale": 0.5904900000000001,
+    "lr": 5.904900000000001e-05,
+    "weight_decay": 0.05
+  },
+  "layer_3_no_decay": {
+    "param_names": [
+      "backbone.stages.2.0.gamma",
+      "backbone.stages.2.0.dwconv.bias",
+      "backbone.stages.2.0.norm.weight",
+      "backbone.stages.2.0.norm.bias",
+      "backbone.stages.2.0.pwconv1.bias",
+      "backbone.stages.2.0.pwconv2.bias",
+      "backbone.stages.2.1.gamma",
+      "backbone.stages.2.1.dwconv.bias",
+      "backbone.stages.2.1.norm.weight",
+      "backbone.stages.2.1.norm.bias",
+      "backbone.stages.2.1.pwconv1.bias",
+      "backbone.stages.2.1.pwconv2.bias",
+      "backbone.stages.2.2.gamma",
+      "backbone.stages.2.2.dwconv.bias",
+      "backbone.stages.2.2.norm.weight",
+      "backbone.stages.2.2.norm.bias",
+      "backbone.stages.2.2.pwconv1.bias",
+      "backbone.stages.2.2.pwconv2.bias",
+      "backbone.stages.2.3.gamma",
+      "backbone.stages.2.3.dwconv.bias",
+      "backbone.stages.2.3.norm.weight",
+      "backbone.stages.2.3.norm.bias",
+      "backbone.stages.2.3.pwconv1.bias",
+      "backbone.stages.2.3.pwconv2.bias",
+      "backbone.stages.2.4.gamma",
+      "backbone.stages.2.4.dwconv.bias",
+      "backbone.stages.2.4.norm.weight",
+      "backbone.stages.2.4.norm.bias",
+      "backbone.stages.2.4.pwconv1.bias",
+      "backbone.stages.2.4.pwconv2.bias",
+      "backbone.stages.2.5.gamma",
+      "backbone.stages.2.5.dwconv.bias",
+      "backbone.stages.2.5.norm.weight",
+      "backbone.stages.2.5.norm.bias",
+      "backbone.stages.2.5.pwconv1.bias",
+      "backbone.stages.2.5.pwconv2.bias",
+      "backbone.stages.2.6.gamma",
+      "backbone.stages.2.6.dwconv.bias",
+      "backbone.stages.2.6.norm.weight",
+      "backbone.stages.2.6.norm.bias",
+      "backbone.stages.2.6.pwconv1.bias",
+      "backbone.stages.2.6.pwconv2.bias",
+      "backbone.stages.2.7.gamma",
+      "backbone.stages.2.7.dwconv.bias",
+      "backbone.stages.2.7.norm.weight",
+      "backbone.stages.2.7.norm.bias",
+      "backbone.stages.2.7.pwconv1.bias",
+      "backbone.stages.2.7.pwconv2.bias",
+      "backbone.stages.2.8.gamma",
+      "backbone.stages.2.8.dwconv.bias",
+      "backbone.stages.2.8.norm.weight",
+      "backbone.stages.2.8.norm.bias",
+      "backbone.stages.2.8.pwconv1.bias",
+      "backbone.stages.2.8.pwconv2.bias"
+    ],
+    "lr_scale": 0.6561,
+    "lr": 6.561e-05,
+    "weight_decay": 0.0
+  },
+  "layer_3_decay": {
+    "param_names": [
+      "backbone.stages.2.0.dwconv.weight",
+      "backbone.stages.2.0.pwconv1.weight",
+      "backbone.stages.2.0.pwconv2.weight",
+      "backbone.stages.2.1.dwconv.weight",
+      "backbone.stages.2.1.pwconv1.weight",
+      "backbone.stages.2.1.pwconv2.weight",
+      "backbone.stages.2.2.dwconv.weight",
+      "backbone.stages.2.2.pwconv1.weight",
+      "backbone.stages.2.2.pwconv2.weight",
+      "backbone.stages.2.3.dwconv.weight",
+      "backbone.stages.2.3.pwconv1.weight",
+      "backbone.stages.2.3.pwconv2.weight",
+      "backbone.stages.2.4.dwconv.weight",
+      "backbone.stages.2.4.pwconv1.weight",
+      "backbone.stages.2.4.pwconv2.weight",
+      "backbone.stages.2.5.dwconv.weight",
+      "backbone.stages.2.5.pwconv1.weight",
+      "backbone.stages.2.5.pwconv2.weight",
+      "backbone.stages.2.6.dwconv.weight",
+      "backbone.stages.2.6.pwconv1.weight",
+      "backbone.stages.2.6.pwconv2.weight",
+      "backbone.stages.2.7.dwconv.weight",
+      "backbone.stages.2.7.pwconv1.weight",
+      "backbone.stages.2.7.pwconv2.weight",
+      "backbone.stages.2.8.dwconv.weight",
+      "backbone.stages.2.8.pwconv1.weight",
+      "backbone.stages.2.8.pwconv2.weight"
+    ],
+    "lr_scale": 0.6561,
+    "lr": 6.561e-05,
+    "weight_decay": 0.05
+  },
+  "layer_4_no_decay": {
+    "param_names": [
+      "backbone.stages.3.0.gamma",
+      "backbone.stages.3.0.dwconv.bias",
+      "backbone.stages.3.0.norm.weight",
+      "backbone.stages.3.0.norm.bias",
+      "backbone.stages.3.0.pwconv1.bias",
+      "backbone.stages.3.0.pwconv2.bias",
+      "backbone.stages.3.1.gamma",
+      "backbone.stages.3.1.dwconv.bias",
+      "backbone.stages.3.1.norm.weight",
+      "backbone.stages.3.1.norm.bias",
+      "backbone.stages.3.1.pwconv1.bias",
+      "backbone.stages.3.1.pwconv2.bias",
+      "backbone.stages.3.2.gamma",
+      "backbone.stages.3.2.dwconv.bias",
+      "backbone.stages.3.2.norm.weight",
+      "backbone.stages.3.2.norm.bias",
+      "backbone.stages.3.2.pwconv1.bias",
+      "backbone.stages.3.2.pwconv2.bias"
+    ],
+    "lr_scale": 0.7290000000000001,
+    "lr": 7.290000000000001e-05,
+    "weight_decay": 0.0
+  },
+  "layer_4_decay": {
+    "param_names": [
+      "backbone.stages.3.0.dwconv.weight",
+      "backbone.stages.3.0.pwconv1.weight",
+      "backbone.stages.3.0.pwconv2.weight",
+      "backbone.stages.3.1.dwconv.weight",
+      "backbone.stages.3.1.pwconv1.weight",
+      "backbone.stages.3.1.pwconv2.weight",
+      "backbone.stages.3.2.dwconv.weight",
+      "backbone.stages.3.2.pwconv1.weight",
+      "backbone.stages.3.2.pwconv2.weight"
+    ],
+    "lr_scale": 0.7290000000000001,
+    "lr": 7.290000000000001e-05,
+    "weight_decay": 0.05
+  },
+  "layer_7_no_decay": {
+    "param_names": [
+      "backbone.norm0.weight",
+      "backbone.norm0.bias",
+      "backbone.norm1.weight",
+      "backbone.norm1.bias",
+      "backbone.norm2.weight",
+      "backbone.norm2.bias",
+      "backbone.norm3.weight",
+      "backbone.norm3.bias",
+      "decode_head.conv_seg.bias",
+      "decode_head.psp_modules.0.1.bn.weight",
+      "decode_head.psp_modules.0.1.bn.bias",
+      "decode_head.psp_modules.1.1.bn.weight",
+      "decode_head.psp_modules.1.1.bn.bias",
+      "decode_head.psp_modules.2.1.bn.weight",
+      "decode_head.psp_modules.2.1.bn.bias",
+      "decode_head.psp_modules.3.1.bn.weight",
+      "decode_head.psp_modules.3.1.bn.bias",
+      "decode_head.bottleneck.bn.weight",
+      "decode_head.bottleneck.bn.bias",
+      "decode_head.lateral_convs.0.bn.weight",
+      "decode_head.lateral_convs.0.bn.bias",
+      "decode_head.lateral_convs.1.bn.weight",
+      "decode_head.lateral_convs.1.bn.bias",
+      "decode_head.lateral_convs.2.bn.weight",
+      "decode_head.lateral_convs.2.bn.bias",
+      "decode_head.fpn_convs.0.bn.weight",
+      "decode_head.fpn_convs.0.bn.bias",
+      "decode_head.fpn_convs.1.bn.weight",
+      "decode_head.fpn_convs.1.bn.bias",
+      "decode_head.fpn_convs.2.bn.weight",
+      "decode_head.fpn_convs.2.bn.bias",
+      "decode_head.fpn_bottleneck.bn.weight",
+      "decode_head.fpn_bottleneck.bn.bias",
+      "auxiliary_head.conv_seg.bias",
+      "auxiliary_head.convs.0.bn.weight",
+      "auxiliary_head.convs.0.bn.bias"
+    ],
+    "lr_scale": 1.0,
+    "lr": 0.0001,
+    "weight_decay": 0.0
+  },
+  "layer_7_decay": {
+    "param_names": [
+      "decode_head.conv_seg.weight",
+      "decode_head.psp_modules.0.1.conv.weight",
+      "decode_head.psp_modules.1.1.conv.weight",
+      "decode_head.psp_modules.2.1.conv.weight",
+      "decode_head.psp_modules.3.1.conv.weight",
+      "decode_head.bottleneck.conv.weight",
+      "decode_head.lateral_convs.0.conv.weight",
+      "decode_head.lateral_convs.1.conv.weight",
+      "decode_head.lateral_convs.2.conv.weight",
+      "decode_head.fpn_convs.0.conv.weight",
+      "decode_head.fpn_convs.1.conv.weight",
+      "decode_head.fpn_convs.2.conv.weight",
+      "decode_head.fpn_bottleneck.conv.weight",
+      "auxiliary_head.conv_seg.weight",
+      "auxiliary_head.convs.0.conv.weight"
+    ],
+    "lr_scale": 1.0,
+    "lr": 0.0001,
+    "weight_decay": 0.05
+  }
+}
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 32768.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 32768.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 16384.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 16384.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 8192.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 8192.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 4096.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 4096.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 2048.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 2048.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 1024.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 1024.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 512.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 512.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 256.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 256.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 128.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 128.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 64.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 64.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 32.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 32.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 16.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 16.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 8.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 8.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 4.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 4.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 2.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 2.0
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************

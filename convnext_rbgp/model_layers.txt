@@ -1,0 +1,485 @@
+No CUDA runtime is found, using CUDA_HOME='/opt/cuda'
+EncoderDecoder(
+  (backbone): ConvNeXt(
+    (downsample_layers): ModuleList(
+      (0): Sequential(
+        (0): Conv2d(3, 96, kernel_size=(4, 4), stride=(4, 4))
+        (1): LayerNorm()
+      )
+      (1): Sequential(
+        (0): LayerNorm()
+        (1): Conv2d(96, 192, kernel_size=(2, 2), stride=(2, 2))
+      )
+      (2): Sequential(
+        (0): LayerNorm()
+        (1): Conv2d(192, 384, kernel_size=(2, 2), stride=(2, 2))
+      )
+      (3): Sequential(
+        (0): LayerNorm()
+        (1): Conv2d(384, 768, kernel_size=(2, 2), stride=(2, 2))
+      )
+    )
+    (stages): ModuleList(
+      (0): Sequential(
+        (0): Block(
+          (dwconv): Conv2d(96, 96, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=96)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=96, out_features=384, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=384, out_features=96, bias=True)
+          (drop_path): Identity()
+        )
+        (1): Block(
+          (dwconv): Conv2d(96, 96, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=96)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=96, out_features=384, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=384, out_features=96, bias=True)
+          (drop_path): DropPath()
+        )
+        (2): Block(
+          (dwconv): Conv2d(96, 96, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=96)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=96, out_features=384, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=384, out_features=96, bias=True)
+          (drop_path): DropPath()
+        )
+      )
+      (1): Sequential(
+        (0): Block(
+          (dwconv): Conv2d(192, 192, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=192)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=192, out_features=768, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=768, out_features=192, bias=True)
+          (drop_path): DropPath()
+        )
+        (1): Block(
+          (dwconv): Conv2d(192, 192, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=192)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=192, out_features=768, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=768, out_features=192, bias=True)
+          (drop_path): DropPath()
+        )
+        (2): Block(
+          (dwconv): Conv2d(192, 192, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=192)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=192, out_features=768, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=768, out_features=192, bias=True)
+          (drop_path): DropPath()
+        )
+      )
+      (2): Sequential(
+        (0): Block(
+          (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop_path): DropPath()
+        )
+        (1): Block(
+          (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop_path): DropPath()
+        )
+        (2): Block(
+          (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop_path): DropPath()
+        )
+        (3): Block(
+          (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop_path): DropPath()
+        )
+        (4): Block(
+          (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop_path): DropPath()
+        )
+        (5): Block(
+          (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop_path): DropPath()
+        )
+        (6): Block(
+          (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop_path): DropPath()
+        )
+        (7): Block(
+          (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop_path): DropPath()
+        )
+        (8): Block(
+          (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop_path): DropPath()
+        )
+      )
+      (3): Sequential(
+        (0): Block(
+          (dwconv): Conv2d(768, 768, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=768)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop_path): DropPath()
+        )
+        (1): Block(
+          (dwconv): Conv2d(768, 768, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=768)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop_path): DropPath()
+        )
+        (2): Block(
+          (dwconv): Conv2d(768, 768, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=768)
+          (norm): LayerNorm()
+          (pwconv1): Linear(in_features=768, out_features=3072, bias=True)
+          (act): GELU()
+          (pwconv2): Linear(in_features=3072, out_features=768, bias=True)
+          (drop_path): DropPath()
+        )
+      )
+    )
+    (norm0): LayerNorm()
+    (norm1): LayerNorm()
+    (norm2): LayerNorm()
+    (norm3): LayerNorm()
+  )
+  (decode_head): UPerHead(
+    input_transform=multiple_select, ignore_index=255, align_corners=False
+    (loss_decode): CrossEntropyLoss()
+    (conv_seg): Conv2d(512, 150, kernel_size=(1, 1), stride=(1, 1))
+    (dropout): Dropout2d(p=0.1, inplace=False)
+    (psp_modules): PPM(
+      (0): Sequential(
+        (0): AdaptiveAvgPool2d(output_size=1)
+        (1): ConvModule(
+          (conv): Conv2d(768, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (activate): ReLU(inplace=True)
+        )
+      )
+      (1): Sequential(
+        (0): AdaptiveAvgPool2d(output_size=2)
+        (1): ConvModule(
+          (conv): Conv2d(768, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (activate): ReLU(inplace=True)
+        )
+      )
+      (2): Sequential(
+        (0): AdaptiveAvgPool2d(output_size=3)
+        (1): ConvModule(
+          (conv): Conv2d(768, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (activate): ReLU(inplace=True)
+        )
+      )
+      (3): Sequential(
+        (0): AdaptiveAvgPool2d(output_size=6)
+        (1): ConvModule(
+          (conv): Conv2d(768, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (activate): ReLU(inplace=True)
+        )
+      )
+    )
+    (bottleneck): ConvModule(
+      (conv): Conv2d(2816, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (activate): ReLU(inplace=True)
+    )
+    (lateral_convs): ModuleList(
+      (0): ConvModule(
+        (conv): Conv2d(96, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (activate): ReLU()
+      )
+      (1): ConvModule(
+        (conv): Conv2d(192, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (activate): ReLU()
+      )
+      (2): ConvModule(
+        (conv): Conv2d(384, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (activate): ReLU()
+      )
+    )
+    (fpn_convs): ModuleList(
+      (0): ConvModule(
+        (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (activate): ReLU()
+      )
+      (1): ConvModule(
+        (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (activate): ReLU()
+      )
+      (2): ConvModule(
+        (conv): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (activate): ReLU()
+      )
+    )
+    (fpn_bottleneck): ConvModule(
+      (conv): Conv2d(2048, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn): SyncBatchNorm(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (activate): ReLU(inplace=True)
+    )
+  )
+  (auxiliary_head): FCNHead(
+    input_transform=None, ignore_index=255, align_corners=False
+    (loss_decode): CrossEntropyLoss()
+    (conv_seg): Conv2d(256, 150, kernel_size=(1, 1), stride=(1, 1))
+    (dropout): Dropout2d(p=0.1, inplace=False)
+    (convs): Sequential(
+      (0): ConvModule(
+        (conv): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn): SyncBatchNorm(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (activate): ReLU(inplace=True)
+      )
+    )
+  )
+)
+Inside printing of layers names
+backbone.downsample_layers.0.0 Conv2d(3, 96, kernel_size=(4, 4), stride=(4, 4))
+backbone.downsample_layers.1.1 Conv2d(96, 192, kernel_size=(2, 2), stride=(2, 2))
+backbone.downsample_layers.2.1 Conv2d(192, 384, kernel_size=(2, 2), stride=(2, 2))
+backbone.downsample_layers.3.1 Conv2d(384, 768, kernel_size=(2, 2), stride=(2, 2))
+backbone.stages.0.0.dwconv Conv2d(96, 96, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=96)
+backbone.stages.0.1.dwconv Conv2d(96, 96, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=96)
+backbone.stages.0.2.dwconv Conv2d(96, 96, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=96)
+backbone.stages.1.0.dwconv Conv2d(192, 192, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=192)
+backbone.stages.1.1.dwconv Conv2d(192, 192, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=192)
+backbone.stages.1.2.dwconv Conv2d(192, 192, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=192)
+backbone.stages.2.0.dwconv Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+backbone.stages.2.1.dwconv Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+backbone.stages.2.2.dwconv Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+backbone.stages.2.3.dwconv Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+backbone.stages.2.4.dwconv Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+backbone.stages.2.5.dwconv Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+backbone.stages.2.6.dwconv Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+backbone.stages.2.7.dwconv Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+backbone.stages.2.8.dwconv Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+backbone.stages.3.0.dwconv Conv2d(768, 768, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=768)
+backbone.stages.3.1.dwconv Conv2d(768, 768, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=768)
+backbone.stages.3.2.dwconv Conv2d(768, 768, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=768)
+decode_head.conv_seg Conv2d(512, 150, kernel_size=(1, 1), stride=(1, 1))
+decode_head.psp_modules.0.1.conv Conv2d(768, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+decode_head.psp_modules.1.1.conv Conv2d(768, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+decode_head.psp_modules.2.1.conv Conv2d(768, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+decode_head.psp_modules.3.1.conv Conv2d(768, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+decode_head.bottleneck.conv Conv2d(2816, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+decode_head.lateral_convs.0.conv Conv2d(96, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+decode_head.lateral_convs.1.conv Conv2d(192, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+decode_head.lateral_convs.2.conv Conv2d(384, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+decode_head.fpn_convs.0.conv Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+decode_head.fpn_convs.1.conv Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+decode_head.fpn_convs.2.conv Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+decode_head.fpn_bottleneck.conv Conv2d(2048, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+auxiliary_head.conv_seg Conv2d(256, 150, kernel_size=(1, 1), stride=(1, 1))
+auxiliary_head.convs.0.conv Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+37
+layer.backbone.weight
+layer.backbone.downsample_layers.weight
+layer.backbone.downsample_layers.0.weight
+layer.backbone.downsample_layers.0.0.weight
+layer.backbone.downsample_layers.0.1.weight
+layer.backbone.downsample_layers.1.weight
+layer.backbone.downsample_layers.1.0.weight
+layer.backbone.downsample_layers.1.1.weight
+layer.backbone.downsample_layers.2.weight
+layer.backbone.downsample_layers.2.0.weight
+layer.backbone.downsample_layers.2.1.weight
+layer.backbone.downsample_layers.3.weight
+layer.backbone.downsample_layers.3.0.weight
+layer.backbone.downsample_layers.3.1.weight
+layer.backbone.stages.weight
+layer.backbone.stages.0.weight
+layer.backbone.stages.0.0.weight
+layer.backbone.stages.0.0.dwconv.weight
+layer.backbone.stages.0.0.norm.weight
+layer.backbone.stages.0.0.pwconv1.weight
+layer.backbone.stages.0.0.act.weight
+layer.backbone.stages.0.0.pwconv2.weight
+layer.backbone.stages.0.0.drop_path.weight
+layer.backbone.stages.0.1.weight
+layer.backbone.stages.0.1.dwconv.weight
+layer.backbone.stages.0.1.norm.weight
+layer.backbone.stages.0.1.pwconv1.weight
+layer.backbone.stages.0.1.act.weight
+layer.backbone.stages.0.1.pwconv2.weight
+layer.backbone.stages.0.1.drop_path.weight
+layer.backbone.stages.0.2.weight
+layer.backbone.stages.0.2.dwconv.weight
+layer.backbone.stages.0.2.norm.weight
+layer.backbone.stages.0.2.pwconv1.weight
+layer.backbone.stages.0.2.act.weight
+layer.backbone.stages.0.2.pwconv2.weight
+layer.backbone.stages.0.2.drop_path.weight
+layer.backbone.stages.1.weight
+layer.backbone.stages.1.0.weight
+layer.backbone.stages.1.0.dwconv.weight
+layer.backbone.stages.1.0.norm.weight
+layer.backbone.stages.1.0.pwconv1.weight
+layer.backbone.stages.1.0.act.weight
+layer.backbone.stages.1.0.pwconv2.weight
+layer.backbone.stages.1.0.drop_path.weight
+layer.backbone.stages.1.1.weight
+layer.backbone.stages.1.1.dwconv.weight
+layer.backbone.stages.1.1.norm.weight
+layer.backbone.stages.1.1.pwconv1.weight
+layer.backbone.stages.1.1.act.weight
+layer.backbone.stages.1.1.pwconv2.weight
+layer.backbone.stages.1.1.drop_path.weight
+layer.backbone.stages.1.2.weight
+layer.backbone.stages.1.2.dwconv.weight
+layer.backbone.stages.1.2.norm.weight
+layer.backbone.stages.1.2.pwconv1.weight
+layer.backbone.stages.1.2.act.weight
+layer.backbone.stages.1.2.pwconv2.weight
+layer.backbone.stages.1.2.drop_path.weight
+layer.backbone.stages.2.weight
+layer.backbone.stages.2.0.weight
+layer.backbone.stages.2.0.dwconv.weight
+layer.backbone.stages.2.0.norm.weight
+layer.backbone.stages.2.0.pwconv1.weight
+layer.backbone.stages.2.0.act.weight
+layer.backbone.stages.2.0.pwconv2.weight
+layer.backbone.stages.2.0.drop_path.weight
+layer.backbone.stages.2.1.weight
+layer.backbone.stages.2.1.dwconv.weight
+layer.backbone.stages.2.1.norm.weight
+layer.backbone.stages.2.1.pwconv1.weight
+layer.backbone.stages.2.1.act.weight
+layer.backbone.stages.2.1.pwconv2.weight
+layer.backbone.stages.2.1.drop_path.weight
+layer.backbone.stages.2.2.weight
+layer.backbone.stages.2.2.dwconv.weight
+layer.backbone.stages.2.2.norm.weight
+layer.backbone.stages.2.2.pwconv1.weight
+layer.backbone.stages.2.2.act.weight
+layer.backbone.stages.2.2.pwconv2.weight
+layer.backbone.stages.2.2.drop_path.weight
+layer.backbone.stages.2.3.weight
+layer.backbone.stages.2.3.dwconv.weight
+layer.backbone.stages.2.3.norm.weight
+layer.backbone.stages.2.3.pwconv1.weight
+layer.backbone.stages.2.3.act.weight
+layer.backbone.stages.2.3.pwconv2.weight
+layer.backbone.stages.2.3.drop_path.weight
+layer.backbone.stages.2.4.weight
+layer.backbone.stages.2.4.dwconv.weight
+layer.backbone.stages.2.4.norm.weight
+layer.backbone.stages.2.4.pwconv1.weight
+layer.backbone.stages.2.4.act.weight
+layer.backbone.stages.2.4.pwconv2.weight
+layer.backbone.stages.2.4.drop_path.weight
+layer.backbone.stages.2.5.weight
+layer.backbone.stages.2.5.dwconv.weight
+layer.backbone.stages.2.5.norm.weight
+layer.backbone.stages.2.5.pwconv1.weight
+layer.backbone.stages.2.5.act.weight
+layer.backbone.stages.2.5.pwconv2.weight
+layer.backbone.stages.2.5.drop_path.weight
+layer.backbone.stages.2.6.weight
+layer.backbone.stages.2.6.dwconv.weight
+layer.backbone.stages.2.6.norm.weight
+layer.backbone.stages.2.6.pwconv1.weight
+layer.backbone.stages.2.6.act.weight
+layer.backbone.stages.2.6.pwconv2.weight
+layer.backbone.stages.2.6.drop_path.weight
+layer.backbone.stages.2.7.weight
+layer.backbone.stages.2.7.dwconv.weight
+layer.backbone.stages.2.7.norm.weight
+layer.backbone.stages.2.7.pwconv1.weight
+layer.backbone.stages.2.7.act.weight
+layer.backbone.stages.2.7.pwconv2.weight
+layer.backbone.stages.2.7.drop_path.weight
+layer.backbone.stages.2.8.weight
+layer.backbone.stages.2.8.dwconv.weight
+layer.backbone.stages.2.8.norm.weight
+layer.backbone.stages.2.8.pwconv1.weight
+layer.backbone.stages.2.8.act.weight
+layer.backbone.stages.2.8.pwconv2.weight
+layer.backbone.stages.2.8.drop_path.weight
+layer.backbone.stages.3.weight
+layer.backbone.stages.3.0.weight
+layer.backbone.stages.3.0.dwconv.weight
+layer.backbone.stages.3.0.norm.weight
+layer.backbone.stages.3.0.pwconv1.weight
+layer.backbone.stages.3.0.act.weight
+layer.backbone.stages.3.0.pwconv2.weight
+layer.backbone.stages.3.0.drop_path.weight
+layer.backbone.stages.3.1.weight
+layer.backbone.stages.3.1.dwconv.weight
+layer.backbone.stages.3.1.norm.weight
+layer.backbone.stages.3.1.pwconv1.weight
+layer.backbone.stages.3.1.act.weight
+layer.backbone.stages.3.1.pwconv2.weight
+layer.backbone.stages.3.1.drop_path.weight
+layer.backbone.stages.3.2.weight
+layer.backbone.stages.3.2.dwconv.weight
+layer.backbone.stages.3.2.norm.weight
+layer.backbone.stages.3.2.pwconv1.weight
+layer.backbone.stages.3.2.act.weight
+layer.backbone.stages.3.2.pwconv2.weight
+layer.backbone.stages.3.2.drop_path.weight
+layer.backbone.norm0.weight
+layer.backbone.norm1.weight
+layer.backbone.norm2.weight
+layer.backbone.norm3.weight
+layer.decode_head.conv_seg.weight
+layer.decode_head.psp_modules.0.1.conv.weight
+layer.decode_head.psp_modules.1.1.conv.weight
+layer.decode_head.psp_modules.2.1.conv.weight
+layer.decode_head.psp_modules.3.1.conv.weight
+layer.decode_head.bottleneck.conv.weight
+layer.decode_head.lateral_convs.0.conv.weight
+layer.decode_head.lateral_convs.1.conv.weight
+layer.decode_head.lateral_convs.2.conv.weight
+layer.decode_head.fpn_convs.0.conv.weight
+layer.decode_head.fpn_convs.1.conv.weight
+layer.decode_head.fpn_convs.2.conv.weight
+layer.decode_head.fpn_bottleneck.conv.weight
+layer.uxiliary_head.conv_seg.weight
+layer.uxiliary_head.convs.0.conv.weight
+Num of RBGP layers 164
+backbone.downsample_layers.0.0.Conv2d
+auxiliary_head.conv_seg.Conv2d
+Non rbgp layers 2
